@@ -167,6 +167,33 @@
       "dob": "1989-02-19",
       "subject": "Science",
       "id": 23
+    },
+    {
+      "firstname": "Rakesh",
+      "lastname": "YAdav",
+      "gender": "Male",
+      "age": 1,
+      "dob": "2022-04-16",
+      "subject": "Arts",
+      "id": 24
+    },
+    {
+      "firstname": "Rakesh ",
+      "lastname": "Sharma",
+      "gender": "Male",
+      "age": 1,
+      "dob": "2022-04-30",
+      "subject": "Arts",
+      "id": 25
+    },
+    {
+      "firstname": "Vidya",
+      "lastname": "Balan",
+      "gender": "Female",
+      "age": 45,
+      "dob": "2021-12-10",
+      "subject": "Science",
+      "id": 26
     }
   ]
 }

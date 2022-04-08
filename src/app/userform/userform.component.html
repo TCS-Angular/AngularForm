@@ -76,11 +76,33 @@
     Save Button
   </button>
 </div>
-<ul class="list-group">
+<table class="table table-hover">
+  <thead class="thread-dark">
+    <th scope="col">Name</th>
+    <th scope="col">Age</th>
+    <th scope="col">DOB</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; index as i">
+      <td>{{user.firstname}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.dob}}</td>
+      <td> <button type="button" (click)="deleteRow(user, i)" class="btn btn-danger">Delete user</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<!-- <ul class="list-group">
   <li class="list-group-item" *ngFor="let user of users; index as i">
     {{ user.firstname }} , {{ user.gender }}
     <button type="button" (click)="deleteRow(user, i)" class="btn btn-danger">
       Delete
     </button>
   </li>
-</ul>
+</ul> -->

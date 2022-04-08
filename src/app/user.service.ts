@@ -5,14 +5,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UserService {
-  BASE_URL = "http://localhost:3000/users/";
+  BASE_URL = 'http://localhost:3000/users/';
   getSubjects() {
-    return this.http.get("http://localhost:3000/subjects")
+    return this.http.get('http://localhost:3000/subjects');
   }
 
-
-  deleteUser(user:any) {
-    return this.http.delete(this.BASE_URL+user.id)
+  deleteUser(user: any) {
+    return this.http.delete(this.BASE_URL + user.id);
   }
   createUser(user: {
     firstname: string;
