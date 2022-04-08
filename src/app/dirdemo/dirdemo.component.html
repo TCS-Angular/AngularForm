@@ -1,0 +1,40 @@
+<p>dirdemo works!</p>
+ 
+<ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'">
+        <a (click)="viewMode = 'map'"> Map view</a>
+    </li>
+<br/>
+    <li [class.active]="viewMode == 'list'">
+        <a (click)="viewMode = 'list'"> List View</a>
+    </li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault>Otherwise</div>
+</div>
+
+<input type="number" #phone placeholder="enter your number">
+<button (click)="getVal(phone.value)" > click me</button>
+
+
+
+<!-- <div [hidden] = "courses.length == 0">
+    List of courses
+</div>
+<div [hidden] = "courses.length > 0">
+    No courses  yet 
+</div> -->
+
+<!-- <div *ngIf="courses.length > 0; then coursesList; else noCourses">
+  List of Courses
+</div>
+<ng-template #coursesList>
+  <ol>
+    <li *ngFor="let course of courses">
+      {{ course }}
+    </li>
+  </ol>
+</ng-template>
+<ng-template #noCourses> No courses yet </ng-template> -->
