@@ -1,4 +1,9 @@
 {
+  "subjects": [
+    "Science",
+    "Arts",
+    "Maths"
+  ],
   "users": [
     {
       "firstname": "Nishant",
@@ -153,6 +158,15 @@
       "gender": "Male",
       "age": 32,
       "id": 22
+    },
+    {
+      "firstname": "Nishant",
+      "lastname": "Gupta",
+      "gender": "Male",
+      "age": 32,
+      "dob": "1989-02-19",
+      "subject": "Science",
+      "id": 23
     }
   ]
 }

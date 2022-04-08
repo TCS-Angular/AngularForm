@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { UserformComponent } from './userform/userform.component';
 import { HttpClientModule} from '@angular/common/http';
 import { DirdemoComponent } from './dirdemo/dirdemo.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
