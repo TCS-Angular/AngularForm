@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { UserformComponent } from './userform/userform.component';
 import { HttpClientModule} from '@angular/common/http';
 import { DirdemoComponent } from './dirdemo/dirdemo.component';
-import { NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PipedemoComponent } from './pipedemo/pipedemo.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     UserformComponent,
     DirdemoComponent,
+    PipedemoComponent,
   ],
   imports: [
     BrowserModule,
